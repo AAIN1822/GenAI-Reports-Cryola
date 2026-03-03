@@ -1,0 +1,98 @@
+#root {
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE/Edge Legacy */
+* {
+  -ms-overflow-style: none;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+button:focus-visible {
+  outline: none !important;
+}
+
+
+
+.MuiInputAdornment-root {
+  background: white !important;
+}
+
+.MuiLink-root {
+  &:disabled {
+    pointer-events: none;
+    color: gray !important;
+    cursor: default;
+  }
+}
+
+.MuiChip-root {
+  left: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}

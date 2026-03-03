@@ -1,0 +1,47 @@
+#----Core API Stack:
+fastapi          #Core backend framework for building APIs
+uvicorn          #ASGI server to run the FastAPI app
+pydantic[email]  #Data validation and serialization for request/response models
+python-dotenv    #Manage .env config for Azure secrets and environment variables
+python-multipart #Handle file uploads (images, assets) in FastAPI
+fastapi-mail     # To send emails easily
+
+#----Database
+sqlalchemy  # ORM (Object Relational Mapper) for defining models, querying data, and managing DB sessions
+alembic     # Database migration tool for SQLAlchemy — keeps schema changes (like new tables/columns) versioned and synchronized
+
+#----Authentication(SSO/Azure AD):
+msal                          #Microsoft Authentication Library — to implement SSO with Azure AD
+requests                      #For token validation / calling Azure Graph APIs
+python-jose[cryptography]     #JWT token handling (decoding ID tokens)
+passlib[bcrypt]               #password hashing
+bcrypt==3.2.2
+
+#----Azure Integration:
+azure-identity          #Handle Azure credentials/Managed Identity auth
+azure-storage-blob      #Upload / read images and assets from Azure Blob Storage
+azure-cosmos            #Interface with Cosmos DB for user data, prompt storage, etc.
+openai                  #For connecting to Azure OpenAI models (GPT, DALL·E, etc.)
+azure-ai-contentsafety  #For content moderation / filtering of generated AI outputs
+aiohttp                 #Async HTTP client for AI Foundry or external APIs
+authlib                 #Authlib for Microsoft SSO OAuth integration
+azure-keyvault-secrets  #To securely fetch secrets from Azure Key Vault
+
+#----Testing/Dev Tools:
+pytest  #Unit and integration testing
+httpx   #Async HTTP client for testing FastAPI endpoints
+black   #Code formatting
+isort   #Sorting imports
+flake8  #Linting / code quality
+
+
+#--AI Dev -----
+openai>=1.0.0
+semantic-kernel==1.35.0
+opencv-python-headless
+numpy
+Pillow
+pydantic==2.7
+python-dotenv
+aiohttp
+nest_asyncio

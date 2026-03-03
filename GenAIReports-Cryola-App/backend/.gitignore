@@ -1,0 +1,82 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+
+# -----------------------------
+# Virtual Environment
+# -----------------------------
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# -----------------------------
+# Environment / Secrets
+# -----------------------------
+*.env.*
+!.env.example     # Keep a sample env template for setup
+secrets.json
+
+# -----------------------------
+# IDE / Editor Files
+# -----------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# Operating System Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Build / Distribution
+# -----------------------------
+build/
+dist/
+pip-wheel-metadata/
+.eggs/
+
+# -----------------------------
+# Testing / Coverage
+# -----------------------------
+.pytest_cache/
+.tox/
+coverage.xml
+htmlcov/
+*.cover
+.cache/
+.nox/
+
+# -----------------------------
+# Docker
+# -----------------------------
+*.pid
+*.seed
+*.bak
+docker-compose.override.yml
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+
+# -----------------------------
+# Azure SDK / Temp Files
+# -----------------------------
+*.azure/
+*.azure_token_cache
